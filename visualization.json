@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A chart showing Argentine Peso Multilateral Exchange Rate",
+  "data": {
+    "url": "https://raw.githubusercontent.com/tomimartinezLSE/tomimartinezlse.github.io/main/itcrm3.json"
+  },
+  "title": {
+    "text": "Argentine Peso Multilateral Exchange Rate",
+    "subtitle": ["Daily Data"]
+  },
+  "mark": {"type": "line"},
+  "encoding": {
+    "x": {"field": "Period", "type": "temporal", "title": "Date"},
+    "y": {"field": "Value", "type": "quantitative", "title": "Value"}
+  },
+  "width": 800,
+  "height": 400,
+  "config": {}
+}
